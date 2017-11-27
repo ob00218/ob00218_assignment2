@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com1032.cw2.ob00218.ob00218_assignment2.MapsActivity"
+        android:layout_weight="3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:text="@string/timeLabel"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:text="@string/distanceLabel"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:text="@string/splitLabel"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/time"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/distance"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/pace"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/timeUnit"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:paddingBottom="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/distanceUnit"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="@string/distanceUnit"
+                android:paddingBottom="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="1sp"
+                android:id="@+id/paceUnit"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="@string/splitUnit"
+                android:paddingBottom="16sp"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            android:src="@drawable/ic_stop2"
+            android:background="@android:color/transparent"
+            android:onClick="stopOnClick"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

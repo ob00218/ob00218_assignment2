@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ob00218_assignment2</string>
+    <string name="action_signOut">Sign Out</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="timeLabel">TIME</string>
+    <string name="splitLabel">PACE</string>
+    <string name="distanceLabel">DISTANCE</string>
+    <string name="distanceUnit">KM</string>
+    <string name="splitUnit">KM/H</string>
+</resources>
